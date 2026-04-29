@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Niranjan Photos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niranjan Gallery</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  background: #111;
+  letter-spacing: 2px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  font-size: 14px;
+  opacity: 0.7;
+}
+</style>
+
 </head>
-<body style="background:black; color:white; text-align:center; font-family:sans-serif;">
-  <h1>Welcome to My Photo Gallery</h1>
-  <p>My personal website 🚀</p>
+<body>
+
+<header>
+  NIRANJAN GALLERY
+</header>
+
+<div class="gallery">
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
+</div>
+
+<footer>
+  © 2026 Niranjan | All Rights Reserved
+</footer>
+
 </body>
 </html>
